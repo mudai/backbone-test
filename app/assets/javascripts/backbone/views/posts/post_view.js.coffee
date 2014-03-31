@@ -1,6 +1,6 @@
-Backbone.Views.Posts ||= {}
+App.Views.Posts ||= {}
 
-class Backbone.Views.Posts.PostView extends Backbone.View
+class App.Views.Posts.PostView extends Backbone.View
   template: JST["backbone/templates/posts/post"]
 
   events:

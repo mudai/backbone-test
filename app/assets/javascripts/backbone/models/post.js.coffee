@@ -1,10 +1,10 @@
-class Backbone.Models.Post extends Backbone.Model
+class App.Models.Post extends Backbone.Model
   paramRoot: 'post'
 
   defaults:
     title: null
     content: null
 
-class Backbone.Collections.PostsCollection extends Backbone.Collection
-  model: Backbone.Models.Post
+class  App.Collections.PostsCollection extends Backbone.Collection
+  model: App.Models.Post
   url: '/posts'
