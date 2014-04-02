@@ -3,6 +3,16 @@
 <head>
   <title>Backbone</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <script type="text/javascript">
+    // jQuery Mobile の設定を行うためのイベントハンドラを登録する。
+    // jQuery Mobile を読み込む前に登録しないと呼び出されない。
+    $(document).bind("mobileinit", function() {
+      $.mobile.ajaxEnabled = false;
+      $.mobile.linkBindingEnabled = false;
+      $.mobile.hashListeningEnabled = false;
+      $.mobile.pushStateEnabled = false;
+    });
+  </script>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
