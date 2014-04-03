@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require backbone/jquery.mobile.init
 //= require jquery.mobile
-//= require turbolinks
 //= require underscore
 //= require backbone
 //= require backbone_rails_sync

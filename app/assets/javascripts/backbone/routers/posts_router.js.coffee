@@ -4,11 +4,15 @@ class App.Routers.PostsRouter extends Backbone.Router
     @posts.reset options.posts
 
   routes:
+    "hoge"     : "test"
     "new"      : "newPost"
     "index"    : "index"
     ":id/edit" : "edit"
     ":id"      : "show"
     ".*"        : "index"
+
+  test: ->
+    alert "test"
 
   newPost: ->
     @view = new App.Views.Posts.NewView(collection: @posts)
